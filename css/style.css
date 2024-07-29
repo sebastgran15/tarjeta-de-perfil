@@ -1,0 +1,158 @@
+:root {
+    /* ### Primary */
+
+    --Dark_cyan: hsl(185, 75%, 39%);
+    --Very_dark_desaturated_blue: hsl(229, 23%, 23%);
+    --Dark_grayish_blue: hsl(227, 10%, 46%);
+    --white: #fff;
+    /* ### Neutral */
+
+    --Dark_gray: hsl(0, 0%, 59%);
+
+    /* FUENTES */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.8rem;
+    color: var(--Very_dark_desaturated_blue);
+    font-family: "Kumbh Sans" , sans-serif;
+}
+
+.contenedor {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark_cyan);
+}
+
+.card {
+    width: 351px;
+    height: 375px;
+    background-color: var(--white);
+    border-radius: 1rem;
+    z-index: 2;
+}
+
+.img1{
+    position: absolute;
+    top: -450px;
+    left: -750px;
+    z-index: 1;
+}
+.img2{
+    position: absolute;
+    z-index: 1;
+    top: 47rem;
+    right: -67rem;
+}
+@media (min-width: 768px){
+    .img1{
+        transform: rotate(10deg);
+        top: -20rem;
+        left: -50rem;
+    }
+    .img2{
+        top: 73rem;
+        right: -55rem;
+    }
+}
+  
+@media (min-width: 1440px) {
+  .img1{
+    top: -40rem;
+    left: -30rem;
+  }
+  .img2{
+    top: 46rem;
+    right: -27rem;
+  }
+}
+
+.img-imagen{
+    border-radius: 1rem 1rem 0 0;
+}
+.img{
+    height: 14rem;
+}
+.contenido-img{
+    width: 11rem;
+    margin: 0 auto;
+    margin-top: -5rem;
+}
+.contenido-img_img{
+    width: 100%;
+    border-radius: 50%;
+    border: 0.6rem solid var(--white);
+}
+
+.contenido-title{
+    font-size: 2rem;
+    text-align: center;
+}
+.num{
+    color: var(--Dark_gray);
+    margin-left: 1rem;
+    font-weight: 400;
+}
+.contenido-lugar{
+    color: var(--Dark_gray);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+hr{
+    background-color: var(--Dark_gray);
+    opacity: .4;
+}
+.rank{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+.rank-content{
+    line-height: 1.5;
+}
+.rank-content__head{
+    font-size: 2rem;
+    text-align: center;
+}
+.rank-content__text{
+    font-size: 1rem;
+    text-align: center;
+    color: var(--Dark_grayish_blue);
+    letter-spacing: 2px;
+}
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    height: 1rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
