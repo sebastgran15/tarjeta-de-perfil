@@ -24,6 +24,10 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ## My process
 
+## Link
+
+- [Live Netlify](https://card-profile-sebast.netlify.app/)
+
 ### Built with
 
 - Semantic HTML5 markup
